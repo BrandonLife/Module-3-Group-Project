@@ -5,22 +5,27 @@
     <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/BrandonSHomePage.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class=" float-left">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quia laboriosam eaque reiciendis
-            commodi consectetur repudiandae nam. Corporis excepturi incidunt eius voluptates adipisci nam sint, aut
-            repellat hic vero nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, cumque esse. Quos
-            tenetur magni voluptatum explicabo, et omnis ipsum facere accusamus! Deleniti earum nesciunt minima quod!
-            Debitis molestias illo error.</p>
+    <header class="header">
+        <H1 id="title">Unique Asian Art</H1>
+    </header>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a> <!-- #'s are test links -->
+        <a href="#news">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
     </div>
+    <div class=" main-content">
+        <button onclick="loadArt()">Click me</button>
+    </div>
+    <script src="../js/BrandonsHomePage.js"></script>
 
-    <div class='float-right'> <img src="../img/download.jpg" alt=""></div>
-
-
-
+    <footer>
+        <b>Strange Art Gallery 2022| Terracotta Soldiers Musem in Lintong District, Xi'An, Shaanxi, China</b>
+    </footer>
 </body>
 
 </html>
