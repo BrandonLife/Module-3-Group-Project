@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+       
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Homemade+Apple&family=Parisienne&display=swap');
+p, div {
+            font-family:  /* uniform fonts on other pages */ 'Rubik Maze', cursive;
+
+        }
+    </style>
+</head>
+<body>
+<p id="art">What is this art piece saying to you?</p>    
+<div id="advice">
+
+</div>
+
+
+<script>
+    
+    
+    document.getElementById("art").addEventListener("click", myFunction) 
+
+
+function myFunction() {
+    let artAdvice = document.getElementById("advice")
+    let body = document.body
+    // document.getElementById("art").innerHTML = //"Life is like a box a' chocolates, you never know what your gonna get.";
+        // fetch('https://api.adviceslip.com/advice');
+        fetch('https://api.adviceslip.com/advice')
+        .then((response) => response.json())
+        .then((data) => {
+            artAdvice.innerHTML = data.slip.advice
+        });
+
+        
+}
+  
+  
+
+  
+
+  
+//     fetch('https://api.adviceslip.com/daily_adviceslip.rss')
+//     then(data => {
+//     return data.json();
+//     });
+
+//   }
+</script>
+
+</body>
+</html>
